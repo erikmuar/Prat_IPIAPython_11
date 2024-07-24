@@ -7,6 +7,25 @@
 
 [Lista de ejercicios](./02.algoritmos.md)
 
+```plaintext
+Ejercicio 1: Erik
+Ejercicio 2: Solomon
+Ejercicio 3: Sergio
+Ejercicio 4: Erik
+Ejercicio 5: J
+Ejercicio 6: Adan
+Ejercicio 7: Erik
+Ejercicio 9: Gerard
+Ejercicio 10: Fran
+Ejercicio 11: Marina
+Ejercicio 13: Gerard
+Ejercicio 14: Irene
+Ejercicio 15: Alejandro
+Ejercicio 16: Cristian
+Ejercicio 18: Irene
+Ejercicio 20: Alejandro
+```
+
 **Dificultad:** over 9000
 
 Trabajo de investigación sobre algoritmos en un caso con aplicación en la vida real.

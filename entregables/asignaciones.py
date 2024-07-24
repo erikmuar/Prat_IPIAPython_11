@@ -55,23 +55,19 @@ def cargar_asignaciones():
 
 def mostrar_asignaciones_finales():
     ejercicios_alumnos = {}
-    asignados_finales = {}
-    asignaciones_count = {alumno: 0 for alumno in asignaciones}
-
+    
+    # Recopilación de todas las asignaciones
     for alumno, ejercicios in asignaciones.items():
         for ejercicio in ejercicios:
             if ejercicio not in ejercicios_alumnos:
                 ejercicios_alumnos[ejercicio] = []
             ejercicios_alumnos[ejercicio].append(alumno)
 
-    # Resolver conflictos: un solo alumno por ejercicio
+    # Resolución de conflictos: un solo alumno por ejercicio
+    asignados_finales = {}
     for ejercicio, alumnos in ejercicios_alumnos.items():
-        alumnos.sort(key=lambda alumno: asignaciones_count[alumno])
-        for alumno in alumnos:
-            if ejercicio not in asignados_finales and asignaciones_count[alumno] < 3:
-                asignados_finales[ejercicio] = alumno
-                asignaciones_count[alumno] += 1
-                break
+        if alumnos:  # Si hay alumnos en la lista
+            asignados_finales[ejercicio] = alumnos[0]  # Asignar el primer alumno de la lista
 
     print("\nAsignaciones finales (un solo alumno por ejercicio):")
     for ejercicio, alumno in sorted(asignados_finales.items()):
@@ -83,15 +79,43 @@ if __name__ == '__main__':
     cargar_asignaciones()
 
     # Ejemplos de uso
-    asignar_ejercicio("Juan", 1)
-    asignar_ejercicio("Juan", 2)
-    asignar_ejercicio("Juan", 3)
-    asignar_ejercicio("Juan", 4)  # No debería asignar porque ya tiene 3
-    asignar_ejercicio("Maria", 1)
-    asignar_ejercicio("Maria", 2)
-    desistir_ejercicio("Maria", 1)
-    asignar_ejercicio("Maria", 3)
-    asignar_ejercicio("Pepe", 3)
+    # asignar_ejercicio("Juan", 1)
+    # asignar_ejercicio("Juan", 2)
+    # asignar_ejercicio("Juan", 3)
+    # asignar_ejercicio("Juan", 4)  # No debería asignar porque ya tiene 3
+    # asignar_ejercicio("Maria", 1)
+    # asignar_ejercicio("Maria", 2)
+    # desistir_ejercicio("Maria", 1)
+    # asignar_ejercicio("Maria", 3)
+    # asignar_ejercicio("Pepe", 3)
+
+    asignar_ejercicio("Erik", 7)
+    asignar_ejercicio("Erik", 4)
+    asignar_ejercicio("Erik", 1)
+    asignar_ejercicio("Cristian", 16)
+    asignar_ejercicio("Sergio", 1)
+    asignar_ejercicio("Sergio", 3)
+    asignar_ejercicio("Cristian", 4)
+    asignar_ejercicio("Irene", 14)
+    asignar_ejercicio("Irene", 18)
+    asignar_ejercicio("J", 5)
+    asignar_ejercicio("Gerard", 9)
+    asignar_ejercicio("Gerard", 13)
+    asignar_ejercicio("Fran", 10)
+    asignar_ejercicio("Solomon", 1)
+    asignar_ejercicio("Solomon", 2)
+    asignar_ejercicio("Marina", 6)
+    asignar_ejercicio("Marina", 11)
+    asignar_ejercicio("Adan", 6)
+    asignar_ejercicio("Adan", 13)
+    asignar_ejercicio("Adan", 9)
+    asignar_ejercicio("Alejandro", 15)
+    asignar_ejercicio("Alejandro", 20)
+    desistir_ejercicio("Sergio", 1)
+    asignar_ejercicio("Josep", 7)
+    asignar_ejercicio("Josep", 9)
+    asignar_ejercicio("Josep", 14)
+    desistir_ejercicio("Marina", 6)
 
     mostrar_asignaciones()
     calcular_ejercicios()
