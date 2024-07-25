@@ -8,10 +8,9 @@
 [Lista de ejercicios](./02.algoritmos.md)
 
 ```plaintext
-Ejercicio 1: Erik
-Ejercicio 2: Solomon
+Ejercicio 1: Solomon
 Ejercicio 3: Sergio
-Ejercicio 4: Erik
+Ejercicio 4: Cristian
 Ejercicio 5: J
 Ejercicio 6: Adan
 Ejercicio 7: Erik
@@ -19,13 +18,14 @@ Ejercicio 9: Gerard
 Ejercicio 10: Fran
 Ejercicio 11: Marina
 Ejercicio 12: Josias
-Ejercicio 13: Gerard
+Ejercicio 13: Adan
 Ejercicio 14: Irene
 Ejercicio 15: Alejandro
 Ejercicio 16: Cristian
 Ejercicio 17: Glenn
-Ejercicio 20: Alejandro
 ```
+
+Libres: 2, 8, 18, 19, 20
 
 **Dificultad:** over 9000
 
