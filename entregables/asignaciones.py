@@ -127,6 +127,7 @@ if __name__ == '__main__':
     desistir_ejercicio("Josep", 14)
     asignar_ejercicio("Josep", 2)
     asignar_ejercicio("Yago", 18)
+    desistir_ejercicio("Cristian", 4)
 
     mostrar_asignaciones()
     calcular_ejercicios()
