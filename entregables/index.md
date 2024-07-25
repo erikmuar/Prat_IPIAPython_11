@@ -18,10 +18,12 @@ Ejercicio 7: Erik
 Ejercicio 9: Gerard
 Ejercicio 10: Fran
 Ejercicio 11: Marina
+Ejercicio 12: Josias
 Ejercicio 13: Gerard
 Ejercicio 14: Irene
 Ejercicio 15: Alejandro
 Ejercicio 16: Cristian
+Ejercicio 17: Glenn
 Ejercicio 18: Irene
 Ejercicio 20: Alejandro
 ```
