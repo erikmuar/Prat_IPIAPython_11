@@ -11,7 +11,6 @@
 Ejercicio 1: Solomon
 Ejercicio 2: Josep
 Ejercicio 3: Sergio
-Ejercicio 4: Cristian
 Ejercicio 5: J
 Ejercicio 6: Adan
 Ejercicio 7: Erik
@@ -27,7 +26,7 @@ Ejercicio 17: Glenn
 Ejercicio 18: Yago
 ```
 
-Libres: 2, 8, 18, 19, 20
+Libres: 8, 18, 19, 20
 
 **Dificultad:** over 9000
 
