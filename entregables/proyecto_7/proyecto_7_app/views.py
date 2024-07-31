@@ -34,6 +34,13 @@ def search_pattern(request):
         end_time_100 = time.time()
         duration_100 = end_time_100 - start_time_100
         
+          # Bucle de 500 veces con texto multiplicado
+        start_time_500 = time.time()
+        for _ in range(500):
+            kmp_search(large_text, pattern)
+        end_time_500 = time.time()
+        duration_500 = end_time_500 - start_time_500
+        
         # Bucle de 1000 veces con texto multiplicado
         start_time_1000 = time.time()
         for _ in range(1000):
@@ -41,8 +48,8 @@ def search_pattern(request):
         end_time_1000 = time.time()
         duration_1000 = end_time_1000 - start_time_1000
         
-        x = [10, 100, 1000]
-        y = [duration_10, duration_100, duration_1000]
+        x = [10, 100,500,1000]
+        y = [duration_10, duration_100,duration_500, duration_1000]
         plt.plot(x, y, marker='o')
         plt.title('Tiempo de Ejecución del Algoritmo KMP')
         plt.xlabel('Número de Repeticiones')
@@ -65,6 +72,7 @@ def search_pattern(request):
             'count': count,
             'duration_10': duration_10,
             'duration_100': duration_100,
+            'duration_500': duration_500,
             'duration_1000': duration_1000,
             'graph_url': '/static/proyecto_7_app/kmp_timing_graph.png',
         }
