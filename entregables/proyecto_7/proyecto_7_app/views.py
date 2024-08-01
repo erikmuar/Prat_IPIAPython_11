@@ -4,6 +4,8 @@ import time
 import matplotlib.pyplot as plt
 import os 
 from django.conf import settings
+import re
+
 
 
 
@@ -122,8 +124,6 @@ def kmp_search(text, pattern):
 def home(request):
     return render(request,"home.html")
 
-def find(request):
-    return render(request,"find.html")
 
-def regex(request):
-    return render(request,"regex.html")
+
+
